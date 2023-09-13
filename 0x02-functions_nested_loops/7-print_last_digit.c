@@ -12,7 +12,7 @@ int a;
 
 if (v < 0)
 {
-v = -v;
+a = -(v % 10);
 a = v % 10;
 _putchar(a + '0');
 }
