@@ -20,6 +20,6 @@ return (0);
 }
 else
 {_putchar('-');
-return ('-');
+return (-1);
 }
 }
