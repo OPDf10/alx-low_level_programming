@@ -21,4 +21,5 @@ else
 a = v % 10;
 _putchar(a);
 }
+return (a);
 }
