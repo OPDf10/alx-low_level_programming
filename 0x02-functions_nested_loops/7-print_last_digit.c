@@ -13,14 +13,13 @@ int a;
 if (v < 0)
 {
 a = -(v % 10);
-a = v % 10;
-_putchar(a + '0');
 }
 else
 {
 a = v % 10;
-_putchar(a + '0');
 }
+
+_putchar(a + '0');
 
 return (a);
 }
