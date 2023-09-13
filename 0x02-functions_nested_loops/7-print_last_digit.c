@@ -14,12 +14,13 @@ if (v < 0)
 {
 v = -v;
 a = v % 10;
-_putchar(a);
+_putchar(a + '0');
 }
 else
 {
 a = v % 10;
-_putchar(a);
+_putchar(a + '0');
 }
+
 return (a);
 }
