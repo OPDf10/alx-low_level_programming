@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * more_numbers - Prints the numbers from 0 to 14 ten times.
- * 
- * Return: void (Parentheses included as per your guidelines).
+ * more_numbers - Prints numbers 0 to 14, 10 times
+ *
+ * Return: void
  */
 
 void more_numbers(void)
 {
-int row, num;
+int count, num;
 
-for (row = 0; row < 10; row++)
+for (count = 0; count < 10; count++)
 {
 for (num = 0; num <= 14; num++)
 {
@@ -22,6 +22,4 @@ _putchar((num % 10) + '0');
 }
 _putchar('\n');
 }
-
-return;
 }
