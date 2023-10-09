@@ -1,41 +1,45 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * _memset - Fills a block of memory with a specified byte.
- * @s: Block of memory.
- * @b: Byte to fill with.
- * @n: Number of bytes to fill.
+ * _memset - sets memory with a constant byte.
+ * @s: destination memory to set.
+ * @b: character to set.
+ * @n: number of bytes to set.
  *
- * Return: Pointer to the block of memory.
+ * Return: pointer to the memory area s.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-for (unsigned int i = 0; i < n; i++)
+unsigned int i;
+
+for (i = 0; i < n; i++)
+{
 s[i] = b;
+}
 
 return (s);
 }
 
 /**
- * _calloc - Allocates and initializes memory for an array of nmemb elements.
- * @nmemb: Number of elements.
- * @size: Size of each element.
+ * _calloc - allocates memory for an array.
+ * @nmemb: number of members of the array.
+ * @size: size of each member.
  *
- * Return: Pointer to the allocated memory, or NULL if failed.
+ * Return: pointer to allocated memory or NULL if it fails.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *allocated_array;
+char *new_memory;
 
 if (nmemb == 0 || size == 0)
 return (NULL);
 
-allocated_array = malloc(nmemb * size);
-if (!allocated_array)
+new_memory = malloc(nmemb * size);
+if (!new_memory)
 return (NULL);
 
-_memset(allocated_array, 0, nmemb * size);
+_memset(new_memory, 0, nmemb * size);
 
-return (allocated_array);
+return (new_memory);
 }
