@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "dog.h"
 
-/*
- * free_dog - Clears memory used by a dog structure
- * @d: Dog structure to clear
+/**
+ * free_dog - Frees a dog structure.
+ * @d: The structure to be freed.
  */
+
 void free_dog(dog_t *d)
 {
 if (d)
